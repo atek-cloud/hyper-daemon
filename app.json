@@ -1,0 +1,6 @@
+{
+  "runtime": "node",
+  "exports": [
+    {"api": "atek.cloud/hypercore-api", "path": "/_api/hyper", "transport": "proxy"}
+  ]
+}
