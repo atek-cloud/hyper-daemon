@@ -37,6 +37,7 @@ const HYPERSPACE_STORAGE = SIMULATE_HYPERSPACE ? ram : process.env.HYPERSPACE_ST
 setup()
 async function setup () {
   if (SIMULATE_HYPERSPACE) {
+    console.log('WARNING: Simulating hyperspace in memory.')
     dhtInst = dht({
       bootstrap: false
     })
