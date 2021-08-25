@@ -1,6 +1,6 @@
 {
   "name": "@atek-cloud/hyper-daemon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hypercore Protocol daemon for Atek cloud",
   "main": "dist/index.js",
   "type": "module",
