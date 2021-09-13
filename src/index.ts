@@ -92,10 +92,10 @@ async function setup () {
     }
   })
 
-  const PORT = Number(process.env.ATEK_ASSIGNED_PORT)
+  const SOCKETFILE = process.env.ATEK_ASSIGNED_SOCKET_FILE
   const server = new http.Server(app)
-  server.listen(PORT, () => {
-    console.log(`Hypercore Protocol server running at: http://localhost:${PORT}/`)
+  server.listen(SOCKETFILE, () => {
+    console.log(`Hypercore Protocol server running at: ${SOCKETFILE}`)
   })
   server.on('upgrade', (request: http.IncomingMessage, socket, head) => {
     wsServer.handleUpgrade(request, (socket as net.Socket), head, (socket: WebSocket) => {
